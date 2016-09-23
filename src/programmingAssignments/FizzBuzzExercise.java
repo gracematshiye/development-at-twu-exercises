@@ -5,7 +5,6 @@ public class FizzBuzzExercise {
 
     public static void main(String[] args){
         fizzBuzz();
-
     }
 
     public static void fizzBuzz() {
