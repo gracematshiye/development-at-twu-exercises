@@ -1,17 +1,12 @@
 package programmingAssignments;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class PrimeFactorsExercise {
     public static void main(String[] args) {
-//        System.out.println(generateNumber(1));
-
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter the Number");
-        int n = input.nextInt();
-        System.out.println("Your number: " + n + "\n" +generateNumber(n));
-
+        System.out.println(generateNumber(1));
+        System.out.println(generateNumber(30));
+        System.out.println(generateNumber(99));
 
     }
 
@@ -20,6 +15,7 @@ public class PrimeFactorsExercise {
         ArrayList primeFactors = new ArrayList();
 
 
+        //generate prime numbers
         for (int i = 1; i <= n; i++) {
             int count = 0;
 
@@ -34,6 +30,7 @@ public class PrimeFactorsExercise {
         }
 
 
+        //Find the prime factor of variable 'n'
         for (int i = 0; i < primeNumbers.size(); i++) {
 
             if(n % (int)primeNumbers.get(i) == 0){
@@ -48,9 +45,5 @@ public class PrimeFactorsExercise {
         }
 
         return primeFactors;
-    }
-    public static void getPrimeFactor(ArrayList list){
-
-
     }
 }
