@@ -7,19 +7,19 @@ public class TriangleExercises {
         System.out.println("*"); //Print one asterisk to the console.
         System.out.println();
 
-        int horizontal = 8;
+        int horizontal = 8; //Draw a horizontal line
         for (int i = 0; i < horizontal; i++) {
             System.out.print("*");
         }
 
         System.out.println("\n");
-        int vertical = 3;
+        int vertical = 3; //Draw a vertical line
         for (int i = 0; i < vertical; i++) {
             System.out.println("*");
         }
 
         System.out.println("\n");
-        int rightTriangle = 3;
+        int rightTriangle = 3; //Draw a right triangle
         for (int i = 1; i <= rightTriangle; i++) {
 
             for (int j = 1; j <= i; j++) {
